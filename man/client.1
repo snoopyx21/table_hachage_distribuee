@@ -1,0 +1,47 @@
+.TH  client 1 "December 15, 2017" "Version 1.0" "Manuel du client"
+.SH NAME
+.B client \- prototype client pour fichier Torrent dans une DHT
+.SH SYNOPSIS
+.B ./client sraddr srport GET hash
+.br
+or
+.br
+.B ./client sraddr srport PUT hash claddr
+.SH DESCRIPTION
+Pseudo-client Peer to Peer. Peut déclarer un hash (fictif) ou récuperer la liste des IPs qui fournissent ce hash.
+.SH OPTIONS
+Options :
+.TP
+\fBsraddr\fP
+Adresse IP(V6 uniquement) du serveur
+.TP
+\fBsrport\fP
+Port du serveur
+.TP
+\fBput\fP
+Type du message
+.br
+PUT = envoie d'un hash
+.TP
+\fBget\fP
+Type du message
+.br
+GET = demande d'un hash
+.TP
+\fBhash\fP
+Hash envoie/demande
+.TP
+\fBcladdr\fP
+Adresse où l'on peut récuperer le hash (avec PUT uniquement)
+.SH RETURN VALUE
+0 si aucun probleme n'est rencontré.
+.SH ERRORS
+.TP
+.B /
+Les erreurs sont indiqués au retour de la commande
+.SH "SEE ALSO"
+server(1)
+.SH LICENCE
+Ce logiciel est soumis a la GNU General Public License.
+.SH AUTHOR
+\fBDIVRIOTIS Constantin\fP

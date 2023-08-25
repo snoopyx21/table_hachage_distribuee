@@ -1,0 +1,37 @@
+.TH  server 1 "December 15, 2017" "Version 1.0" "Manuel du serveur"
+.SH NAME
+.B server \- prototype serveur pour fichier Torrent dans une DHT
+.SH SYNOPSIS
+.B ./server sraddr srport
+.br
+or
+.br
+.B ./server sraddr srport sraddr2 srport2
+.SH DESCRIPTION
+Pseudo-serveur capable de se connecter à différents serveurs, s'échanger des hashs et des KEEPALIVES, mais également de recevoir et de répondre aux différents clients.
+.SH OPTIONS
+Options :
+.TP
+\fBsraddr\fP
+Adresse IP(V6 uniquement) du serveur
+.TP
+\fBsrport\fP
+Port du serveur
+.TP
+\fBsraddr2\fP
+Adresse IP(V6 uniquement) du serveur auquel on veut se connecter
+.TP
+\fBsrport\fP
+Port du serveur auquel on veut se connecter
+.SH RETURN VALUE
+0 si aucun probleme n'est rencontré.
+.SH ERRORS
+.TP
+.B /
+Les erreurs sont indiqués au retour de la commande
+.SH "SEE ALSO"
+server(1)
+.SH LICENCE
+Ce logiciel est soumis a la GNU General Public License.
+.SH AUTHOR
+\fBDIVRIOTIS Constantin\fP
